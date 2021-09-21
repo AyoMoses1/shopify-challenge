@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+
+body{
+    font-family: 'Carattere', cursive;
+    font-family: 'Playfair Display', serif;
+}
+/* Colors */
+.red{
+    color: red;
+}
+
+
+
+
+
+div.loader{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(0, 0, 20);
+    position: absolute;
+    overflow-x: hidden;
+}
+
+div.loader>div.spinner{
+    width: 200px;
+    height: 200px;
+    border: 15px solid #fff;
+    border-top-color: red;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    margin: auto;
+    animation: spin 0.5s infinite linear;
+}
+
+
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+div.gallery{
+    justify-content:space-evenly;
+    display: none;
+}
+
+
+
+
+.card-margin{
+    padding: 20px 10px;
+}
+
+
+div.header{
+    background: rgb(0, 0, 18);
+    color: #fff;
+}
+div.header p{
+    font-size: 400;
+    font-style: italic;
+}
+
+
+.btn-like{
+    border: none;
+    font-weight: bold;
+}
+
+
+div.card{
+    margin-bottom: 50px;
+    width: 350px !important;
+}
+.heart{
+    color: rgb(206, 200, 200);
+}
